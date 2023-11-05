@@ -2,7 +2,7 @@
 if(!localStorage.getItem('token'))
 {
     alert('Please sign in first');
-    window.location.href='http://127.0.0.1:5502/client/login.html'
+    window.location.href='../login.html'
 }
 
 
@@ -36,7 +36,7 @@ const handleSubmit=async (e)=>
     resData.party_size=inputs[4].value;
     resData.T_id=inputs[5].value;
 
-    const res=await fetch(`http://localhost:4600/reservation`,{
+    const res=await fetch(`https://resturant-booking-310m.onrender.com/reservation`,{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -69,7 +69,7 @@ const getTables=async ()=>
     data.time_slot=t_data[1].value;
     data.capacity=t_data[2].value;
     // const token=localStorage.getItem('token');
-    const res=await fetch('http://localhost:4600/getTables',{
+    const res=await fetch('https://resturant-booking-310m.onrender.com/getTables',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'

@@ -3,7 +3,7 @@ const getRes=async()=>
     try
     {
         const email=localStorage.getItem('email');
-        const res=await fetch(`http://localhost:4600/user/reservation/${email}`,{
+        const res=await fetch(`https://resturant-booking-310m.onrender.com/user/reservation/${email}`,{
         method:'GET',
         headers:{
             'Content-Type':'application/json'

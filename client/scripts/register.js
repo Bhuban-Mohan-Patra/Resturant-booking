@@ -14,7 +14,7 @@ const handleRegister=async(e)=>
     regddetails.email=regdInputs[1].value;
     regddetails.password=regdInputs[2].value;
 
-    const res=await fetch('http://localhost:4600/signup',{
+    const res=await fetch('https://resturant-booking-310m.onrender.com/signup',{
         method:'POST',
         headers: {
             'Content-Type':'application/json'

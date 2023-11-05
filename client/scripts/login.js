@@ -12,7 +12,7 @@ const handleLogin=async (e)=>
     logindetails.email=inputs[0].value;
     logindetails.password=inputs[1].value;
 
-    const res=await fetch('http://localhost:4600/signin',{
+    const res=await fetch('https://resturant-booking-310m.onrender.com/signin',{
         method:'POST',
         headers: {
             'Content-Type':'application/json'
@@ -26,7 +26,7 @@ const handleLogin=async (e)=>
         localStorage.setItem('token',resp.token);
         alert("Signed in successfully");
         console.log(resp);
-        window.location.href="http://127.0.0.1:5502/client/index.html";
+        window.location.href="../index.html";
     }
     else
     {
