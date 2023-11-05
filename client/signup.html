@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Table</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            color:white;
+            background: rgb(104, 72, 40);;
+            
+        }
+        .login-container{       
+            display: flex;
+            margin-top: 10vh;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            
+        }
+        .wrapper{
+            width: 340px;
+            background-color: #08070be9;
+            border-radius: 7px;
+        }
+        .wrapper form{
+            padding: 30px;
+        }
+        .text_field{
+            display: flex;
+            align-items: center;
+        }
+        .text_field input{
+            width: 259px;
+            height: 36px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.664);
+            color: #f4efef;
+        }
+        
+        .text_field .icon{
+            position: absolute;
+            right: 50px;
+            color: #ebe5e5;
+        }
+        .checkBox,.button{
+            margin: 10px;
+        }
+        .checkBox label{
+            color: white;
+            margin: 5px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./images/b-logo.png" alt="Logo picture"></a>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="book.html">Book Table</a>
+            <a href="reservation.html">My Reservation</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+        <!-- <div class="icons">
+            <i class="fas fa-bars" id="menu"></i>
+            <i class="fas fa-search" ></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+
+        </div> -->
+    </header>
+    <div class="login-container">
+    <div class="wrapper">
+        <form action="#">
+          <div class="text_field">
+            <input type="text" name="userName" value="" required autocomplete="on" placeholder="Name" class="regdInputs">
+            <div class="icon"></div>
+            
+          </div>
+         
+          <div class="text_field">
+            <input type="email" name="userName" value="" required autocomplete="on" placeholder="Email" class="regdInputs">
+            <div class="icon"></div>
+            
+          </div>
+          <div class="text_field">
+            <input type="password" name="password" value="" required autocomplete="on" placeholder="Password" class="regdInputs">
+            <div class="icon"></div>
+            
+          </div>
+         
+          <div class="text_field">
+            <input type="password" name="password" value="" required autocomplete="on" placeholder=" Confirm password" class="regdInputs">
+            <div class="icon"></div>
+            
+          </div>
+          <br><br>
+          <div class="button_container">
+                    
+            <center><button  class="btn" id="submitbtn2" type="submit">Sign up</button></center> 
+         </div>
+         <br><br>
+          <center><h2>Have account. <a href="login.html">  Log in</a></h2></center>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+        <div class="icons">
+
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+  
+        <div class="center">
+          <div class="logo">
+            <!-- <img src="./images/b-logo.png" alt="logo" /> -->
+            <span style="font-size: 2rem;">Monday to Sunday</span>
+          </div>
+          <div class="copyright">
+            <p>Copyright &copy</p>
+          </div>
+        </div>
+  
+        <div class="right">
+          <span style="font-size: 2rem;">10AM to 11PM</span>
+        </div>
+      </footer>
+    <script src="./scripts/register.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
